@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>index</artifactId>
+    <packaging>bundle</packaging>
+
+    <parent>
+        <groupId>org.jabylon</groupId>
+        <artifactId>jabylon-parent</artifactId>
+        <version>1.3.1-SNAPSHOT</version>
+    </parent>
+
+	<description>provides the QueryService and indexer capabilities to interact with the lucene index</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Bundle-Activator>org.jabylon.index.properties.IndexActivator</Bundle-Activator>
+						<!-- we need to export the internal packages because to UI references the job -->
+                        <_exportcontents>*</_exportcontents>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>properties</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>resources</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>scheduler</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jabylon</groupId>
+            <artifactId>cdo.connector</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jabylon</groupId>
+            <artifactId>cdo.server</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jabylon</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>misc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>queries</artifactId>
+        </dependency>
+         <dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>lucene</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse.equinox</groupId>
+        	<artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse.emf.cdo</groupId>
+        	<artifactId>net4j</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.apache.felix</groupId>
+        	<artifactId>org.apache.felix.scr.annotations</artifactId>
+        </dependency>
+    </dependencies>
+</project>

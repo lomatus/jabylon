@@ -4,3 +4,4 @@
 **/.settings/*m2e.core*
 **/.settings/*moreunit*
 /target
+**/.project

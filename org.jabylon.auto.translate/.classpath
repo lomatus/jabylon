@@ -27,5 +27,23 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/yzhou00/.m2/repository/org/apache/lucene/core/3.5.0/core-3.5.0.jar" sourcepath="C:/Users/yzhou00/.m2/repository/org/apache/lucene/core/3.5.0/core-3.5.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.lucene"/>
+			<attribute name="maven.artifactId" value="core"/>
+			<attribute name="maven.version" value="3.5.0"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/yzhou00/.m2/repository/org/eclipse/emf/common/2.9.1/common-2.9.1.jar" sourcepath="C:/Users/yzhou00/.m2/repository/org/eclipse/emf/common/2.9.1/common-2.9.1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+			<attribute name="maven.artifactId" value="common"/>
+			<attribute name="maven.version" value="2.9.1"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
