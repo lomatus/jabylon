@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GitTeamProvider",
+            "request": "launch",
+            "mainClass": "org.jabylon.team.git.GitTeamProvider",
+            "projectName": "team.git"
+        }
+    ]
+}

@@ -185,6 +185,6 @@ public class APIComponent
             return context;
 
         }
-        return "/api";
+        return "/translator/api";
     }
 }
