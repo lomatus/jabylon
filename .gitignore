@@ -1,7 +1,10 @@
 *~
-/.project
+.project
+**/.classpath
 **/.settings/*sonar*
 **/.settings/*m2e.core*
 **/.settings/*moreunit*
+**/.settings/*.prefs
 /target
 **/.project
+org.jabylon.cdo.connector/.classpath
