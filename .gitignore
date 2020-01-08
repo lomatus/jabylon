@@ -7,4 +7,5 @@
 **/.settings/*.prefs
 /target
 **/.project
-org.jabylon.cdo.connector/.classpath
+**/.externalToolBuilders/*
+org.jabylon.rest.ui/.settings/*
