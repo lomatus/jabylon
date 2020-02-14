@@ -1,5 +1,6 @@
 *~
 .project
+**/*.zip
 **/.classpath
 **/.settings/*sonar*
 **/.settings/*m2e.core*

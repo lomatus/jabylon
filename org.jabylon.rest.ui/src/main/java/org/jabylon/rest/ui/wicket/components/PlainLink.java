@@ -12,6 +12,10 @@ import org.apache.wicket.markup.html.link.Link;
 
 public class PlainLink extends Link<String> {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = -4694322659811985797L;
     private CharSequence path;
 
     public PlainLink(String id, CharSequence path) {
